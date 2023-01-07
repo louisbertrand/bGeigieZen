@@ -27,7 +27,7 @@ EndChargeCurrentDetection: 500mA
 ChargeCutoffVoltage: 4.2V
 */
 
-#include <M5Stack.h>
+#include <M5Core2.h> // #include <M5Stack.h>
 
 class BatteryMonitorIP5306 {
  private:

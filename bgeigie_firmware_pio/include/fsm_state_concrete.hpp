@@ -11,9 +11,9 @@ class StateStartup : public State {
   StateStartup() {}
 
  public:
-  void on_enter(Event e);
+  void on_enter(bGeigieZen::Event e);
   void process();
-  void on_exit(Event e);
+  void on_exit(bGeigieZen::Event e);
   static StateStartup *instance();
 };
 
@@ -25,9 +25,9 @@ class StateWaitGPSTime : public State {
   StateWaitGPSTime() {}
 
  public:
-  void on_enter(Event e);
+  void on_enter(bGeigieZen::Event e);
   void process();
-  void on_exit(Event e);
+  void on_exit(bGeigieZen::Event e);
   static StateWaitGPSTime *instance();
 };
 
@@ -39,9 +39,9 @@ class StateLogging : public State {
   StateLogging() {}
 
  public:
-  void on_enter(Event e);
+  void on_enter(bGeigieZen::Event e);
   void process();
-  void on_exit(Event e);
+  void on_exit(bGeigieZen::Event e);
   static StateLogging *instance();
 };
 #endif  // __FSM_STATE_CONCRETE_HPP__

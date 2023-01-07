@@ -19,7 +19,11 @@
 #include <fsm_state_concrete.hpp>
 
 class State;
-enum class Event;
+
+/*** Avoid name collision with M5Stack Core 2 UI ***/
+namespace bGeigieZen {
+  enum class Event;
+}
 
 class Context {
   State *current_state = NULL;
@@ -41,7 +45,7 @@ class Context {
   void setup();  // initialize all the components
   void on_geiger_counter_available();
   void on_gps_available();
-  void transition_to(State *next_state, Event e);
+  void transition_to(State *next_state, bGeigieZen::Event e);
 
  public:
   Context() {}

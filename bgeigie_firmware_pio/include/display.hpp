@@ -18,7 +18,7 @@ void printIntFont(unsigned long val, bool valid, int len, int y, int x,
 void printDate(TinyGPSDate &d);
 void printTime(TinyGPSTime &t);
 
-enum DisplayState {
+enum DisplayState2 {
   S_STARTUP,
   S_MAIN_DRAW,
   S_MAIN_SHOW,
@@ -57,7 +57,7 @@ class Display {
   static const int height = 240;
   uint32_t _refresh_period_ms;
 
-  DisplayState state{S_STARTUP};
+  DisplayState2 state{S_STARTUP};
   DisplayData data;
 
  public:

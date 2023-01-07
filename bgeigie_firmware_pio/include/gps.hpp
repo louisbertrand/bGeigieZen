@@ -1,7 +1,7 @@
 #ifndef __GPS_HPP__
 #define __GPS_HPP__
 
-#include <M5Stack.h>
+#include <M5Core2.h> // #include <M5Stack.h>
 #include <TinyGPS++.h>
 #include <config.hpp>
 

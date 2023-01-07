@@ -1,7 +1,7 @@
 #ifndef __LOGGER_H__
 #define __LOGGER_H__
 
-#include <M5Stack.h>
+#include <M5Core2.h> // #include <M5Stack.h>
 
 #include <config.hpp>
 #include <cstdio>

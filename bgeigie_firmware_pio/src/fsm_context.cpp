@@ -1,10 +1,10 @@
 
-#include <M5Stack.h>
+#include <M5Core2.h> // #include <M5Stack.h>
 
 #include <fsm_context.hpp>
 
 void Context::begin() {
-  transition_to(StateStartup::instance(), Event::DEVICE_STARTED);
+  transition_to(StateStartup::instance(), bGeigieZen::Event::DEVICE_STARTED);
 }
 
 void Context::loop() {
@@ -81,7 +81,7 @@ void Context::on_gps_available() {
   bgeigie_formatter.feed(gps);
 }
 
-void Context::transition_to(State *next_state, Event e) {
+void Context::transition_to(State *next_state, bGeigieZen::Event e) {
   if (current_state != NULL) current_state->exit(e);
   current_state = next_state;
   current_state->enter(this, e);

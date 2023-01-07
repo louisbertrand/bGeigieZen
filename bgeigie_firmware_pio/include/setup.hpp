@@ -29,7 +29,7 @@
 
 // Link to arduino library
 #include <cstring>
-#include <M5Stack.h>
+#include <M5Core2.h> // #include <M5Stack.h>
 #include <config.hpp>
 #include <Preferences.h>
 

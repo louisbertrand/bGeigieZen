@@ -4,7 +4,7 @@
  *  This class provides an interface to check that the SD card is already
  *  connected and operational
  */
-#include <M5Stack.h>
+#include <M5Core2.h> // #include <M5Stack.h>
 
 #include <config.hpp>
 

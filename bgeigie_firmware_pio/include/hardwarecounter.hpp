@@ -7,7 +7,7 @@
 
 #include <limits>
 
-#include <M5Stack.h>
+#include <M5Core2.h> // #include <M5Stack.h>
 #include <Ticker.h>
 #include <driver/pcnt.h>
 
